@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Login from "../src/account/components/Login";
+import Register from "./account/components/Register";
+import LoginWithEmail from "./account/components/LoginWithEmail";
 // import { lazy } from "react";
 
 // Buradan layout veya Route componentlarına gideceğiz. veya tek sayfalara.
@@ -10,6 +12,9 @@ function App() {
     <>
       <Routes>
         <Route path="/Login" element= {<Login/>} />
+        <Route path="/Register" element={<Register/>} /> 
+        <Route path="/LoginWithEmail" element={<LoginWithEmail/>} /> 
+
       </Routes>
     </>
     //     <>

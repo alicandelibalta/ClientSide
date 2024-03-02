@@ -5,12 +5,17 @@ body,
 html {
   margin: 0;
   padding: 0;
+
 }
 
 * {
   box-sizing: border-box;
 }
 
+a {
+  padding-left: 5px;
+  color: white;
+}
 .container {
   justify-content: center;
   align-items: center;
@@ -37,22 +42,60 @@ html {
 .login-form {
   max-width: 400px;
   width: 100%;
+  height: 500px;
+  display: flex;
 
-  background-color: aqua;
+  background-color: #167D7F;
 }
 
 .login-button {
   width: 300px;
   height: 40px;
-  border-radius: 70px; /* Kenar yuvarlama miktarı */
-  padding: 10px 20px; /* Buton içeriği için boşluklar */
-  font-size: 16px; /* Yazı tipi boyutu */
-  background-color: white; /* Arkaplan rengi */
+  font-size: 16px; 
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 70px; 
+  padding: 10px 20px; 
+  margin: 5px;
+  border: none; 
+
+  background-color: white; 
   color: black; /* Yazı rengi */
-  border: none; /* Kenarlık olmaması */
   cursor: pointer; /* Fare üzerine gelince el şeklinde göster */
+
+  & span {
+   margin-left: 20%; 
+  }
+
+  & img {
+    width: 18px; 
+    height: 18px; 
+  }
 }
 
-.rounded-button:hover {
-    background-color: black; /* Fare üzerine gelindiğinde arka plan rengi değiştirme */
-  }
+.button-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50%;
+}
+
+.register-now {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  color: white;
+}
+
+.context-area {
+  max-width: 400px;
+  width: 100%;
+}
+// .rounded-button:hover {
+//     background-color: black; /* Fare üzerine gelindiğinde arka plan rengi değiştirme */
+//   }
+
+
