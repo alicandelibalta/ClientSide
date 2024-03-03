@@ -1,17 +1,6 @@
 :root {
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-
-}
-
-* {
-  box-sizing: border-box;
-}
-
 a {
   padding-left: 5px;
   color: white;
@@ -91,6 +80,7 @@ a {
 }
 
 .context-area {
+  margin-top: 5px;
   max-width: 400px;
   width: 100%;
 }

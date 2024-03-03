@@ -1,0 +1,97 @@
+:root {
+}
+
+a {
+  padding-left: 5px;
+  color: white;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.frame {
+  width: 1200px;
+  display: flex;
+}
+
+.login-picture {
+  & img {
+    max-width: 800px; // Genişlik 400px'yi geçmeyecek
+    width: 100%; // Genişlik %100 olacak
+    height: auto; // Yükseklik otomatik olarak ayarlanacak, oran korunacak
+  }
+}
+
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+
+  background-color: #167d7f;
+}
+
+.login-input {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 70px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+
+  background-color: white;
+  color: black; /* Yazı rengi */
+  cursor: pointer; /* Fare üzerine gelince el şeklinde göster */
+}
+
+.login-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 40%;;
+  width: 400px;
+}
+
+.register-now {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  color: white;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+  color: white;
+}
+
+.context-area {
+  max-width: 400px;
+  width: 100%;
+
+  margin: 2%;
+}
+
+.errormessage {
+  width: auto;
+  height: auto;
+  color: white;
+}
+// .rounded-button:hover {
+//     background-color: black; /* Fare üzerine gelindiğinde arka plan rengi değiştirme */
+//   }
