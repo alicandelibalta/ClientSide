@@ -21,8 +21,8 @@ function Login() {
 
   return (
     <>
-      <div className="container">
-        <div className="frame">
+      <div className="login-container">
+        <div className="login-frame">
           <div className="login-picture">
             <img //Buraya her zaman 800x500 fotoğraf atmalısın.
               src={require("../img/three-elephant-landscape-with-herd-elephants_1048-7804.avif")}
@@ -31,11 +31,11 @@ function Login() {
           </div>
 
           <div className="login-form">
-            <div className="context-area">
+            <div className="login-context-area">
               <span className="register-now">
                 Are you new to WG?<a href="Register">Register now!</a>
               </span>
-              <div className="button-area">
+              <div className="login-button-area">
                 <button className="login-button" type="submit">
                   <img src={require("../img/google-icon-logo-register-login.png")} alt="" />
                   <span>Login with Google</span>

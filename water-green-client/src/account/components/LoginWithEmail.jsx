@@ -7,13 +7,15 @@ import ForgotPassword from "./ForgotPassword";
 
 // import { ForgotPassword } from "./ForgotPassword";
 import "../scss/loginWithEmail.scss";
+import { useState } from "react";
 
 function LoginWithEmail() {
+
   return (
     <>
-      <div className="container">
-        <div className="frame">
-          <div className="login-picture">
+      <div className="login-with-email-container">
+        <div className="login-with-email-frame">
+          <div className="login-with-email-picture">
             <img //Buraya her zaman 800x500 fotoğraf atmalısın.
               src={require("../img/black-elephant-selective-focus-shot-magnificent-elephant-captured-sunny-day-with-black-wall.png")}
               alt=""
@@ -29,8 +31,8 @@ function LoginWithEmail() {
                 .min(8, "Must be 8 characters or more")
                 .required("Please enter your password")
                 .matches(
-                  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/,
-                  "One Uppercase, One Lowercase, One Number and One Special Case Character"
+                  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$_%^&\.*:;,/-])/,
+                  "At Least One Uppercase, One Lowercase, One Number and One Special Case Character"
                 ),
             })}
             onSubmit={(values, { setSubmitting }) => {
@@ -40,14 +42,14 @@ function LoginWithEmail() {
               }, 400);
             }}
           >
-            <Form className="login-form">
-              <div className="context-area">
+            <Form className="login-with-email-form">
+              <div className="login-with-email-context-area">
                 <span className="register-now">
                   Are you new to WG?<a href="Register">Register now!</a>
                 </span>
 
-                <div className="login-area">
-                  <span className="errormessage">
+                <div className="login-with-email-area">
+                  <span className="login-with-email-errormessage">
                     <ErrorMessage name="email" />
                   </span>
                   <Field
@@ -57,7 +59,7 @@ function LoginWithEmail() {
                     placeholder="e-mail"
                   />
 
-                  <span className="errormessage">
+                  <span className="login-with-email-errormessage">
                     <ErrorMessage name="password" />
                   </span>
                   <Field
@@ -66,8 +68,9 @@ function LoginWithEmail() {
                     className="login-input"
                     placeholder="password"
                   />
+             
 
-                  <button className="login-button"> Login </button>
+                  <button className="login-with-email-button"> Login </button>
                 </div>
 
                 <span className="forgot-password">

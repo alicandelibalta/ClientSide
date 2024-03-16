@@ -15,7 +15,7 @@ function App() {
         <Route path="/Login" element= {<Login/>} />
         <Route path="/Register" element={<Register/>} /> 
         <Route path="/LoginWithEmail" element={<LoginWithEmail/>} /> 
-
+        <Route path="/Register" element={<Register/>} />
       </Routes>
     </>
     //     <>
@@ -25,7 +25,7 @@ function App() {
     //         <Route path="/Login" element={<Login />} />
     //         {/* <Route path="/ForgotPassword" element={<ForgotPassword />} />
     //         <Route path="/ResetPassword/*" element={<ResetPassword />} />
-    //         <Route path="/Register/*" element={<Register/>} /> */}
+    //          */}
 
     // {/*
     //         <Route path="/admin/*" element={<AdminLayout />}>
