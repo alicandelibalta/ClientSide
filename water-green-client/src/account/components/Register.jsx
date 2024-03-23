@@ -114,7 +114,6 @@ function Register() {
                   </span>
                   <Field
                     name="gender"
-                 
                     as="select"
                     className="login-input"
                     placeholder="gender"

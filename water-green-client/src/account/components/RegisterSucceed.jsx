@@ -1,0 +1,1 @@
+//Burası component olmasın Register sayfası içinde success pop-up gibi bişey olsun.
