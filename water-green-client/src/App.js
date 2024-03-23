@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+import "./assets/scss/app.scss"
 // import AdminLayout from "./layouts/admin-layout/AdminLayout";
 // import EditorLayout from "./layouts/editor-layout/EditorLAyout";
 // import WriterLayout from "./layouts/writer-layout/WriterLayout";
@@ -14,21 +15,15 @@ import AccountRoutes from "./routes/AccountRoutes";
 
 function App() {
   return (
-    
-      <Routes>
-        <Route path="/*" element={<AccountRoutes />} /> 
+    <Routes>
+      <Route path="/account*" element={<AccountRoutes />} />
 
       {
-        /* <AdminLayout>
-            <AdminRoutes/>
-          </AdminLayout> */
-        // veya bu şekilde deneriz
         //  <AdminLayout>
         //   <Route exact path="/admin" element={<AdminRoutes />} />
         // </AdminLayout>
       }
-    </Routes> 
-    
+    </Routes>
   );
 }
 

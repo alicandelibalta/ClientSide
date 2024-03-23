@@ -1,9 +1,8 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // import { ForgotPassword } from "./ForgotPassword";
 import "../scss/login.scss";
-import LoginWithEmail from "./LoginWithEmail";
 
 //Burada 2 sayfa döndürücez default olarak önce gmail veya email ile giriş yapmak isteyip istemediğini sorucaz
 //Sonra hangisiyle giriş yapacaksa ona yönlendiricez.
@@ -16,7 +15,7 @@ function Login() {
 
   const handleClick = () => {
     // e.preventdefault();
-    navigate("/LoginWithEmail")
+    navigate("/account/loginwithemail")
   };
 
   return (
@@ -33,7 +32,7 @@ function Login() {
           <div className="login-form">
             <div className="login-context-area">
               <span className="register-now">
-                Are you new to WG?<a href="Register">Register now!</a>
+                Are you new to WG?<a href="register">Register now!</a>
               </span>
               <div className="login-button-area">
                 <button className="login-button" type="submit">

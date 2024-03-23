@@ -8,7 +8,7 @@ const AdminUpdate = lazy(()=> import ('../roles/admin/admin/components/AdminUpda
 function AdminRoutes () {
     return(
        <Routes>
-            <Route exact path="/" element={<AdminList />}/>
+            <Route exact path="/admin" element={<AdminList />}/>
             <Route path="Adminlist" element={<AdminList />} />
             <Route path="Admincreate" element={<AdminCreate />} />
             <Route path="Adminupdate/:id" element={<AdminUpdate />} />
