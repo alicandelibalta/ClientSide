@@ -15,7 +15,7 @@ function Login() {
 
   const handleClick = () => {
     // e.preventdefault();
-    navigate("/account/loginwithemail")
+    navigate("/account/login-with-email")
   };
 
   return (
@@ -32,7 +32,7 @@ function Login() {
           <div className="login-form">
             <div className="login-context-area">
               <span className="register-now">
-                Are you new to WG?<a href="register">Register now!</a>
+                Are you new to WG?<a href="/account/register">Register now!</a>
               </span>
               <div className="login-button-area">
                 <button className="login-button" type="submit">

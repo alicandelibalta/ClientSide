@@ -45,7 +45,7 @@ function LoginWithEmail() {
             <Form className="login-with-email-form">
               <div className="login-with-email-context-area">
                 <span className="register-now">
-                  Are you new to WG?<a href="Register">Register now!</a>
+                  Are you new to WG?<a href="/account/register">Register now!</a>
                 </span>
 
                 <div className="login-with-email-area">
