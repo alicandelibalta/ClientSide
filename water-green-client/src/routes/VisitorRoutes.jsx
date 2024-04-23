@@ -5,7 +5,7 @@ const VisitorGetArticle = lazy(() => import("../roles/visitor/components/Visitor
 const VisitorMainPage = lazy(() => import("../roles/visitor/components/VisitorMainPage"));
 
 
-function AccountRoutes() {
+function VisitorRoutes() {
   return (
     <Suspense fallback={<div></div>}>
       <Routes>
@@ -16,4 +16,4 @@ function AccountRoutes() {
   );
 }
 
-export default AccountRoutes;
+export default VisitorRoutes;

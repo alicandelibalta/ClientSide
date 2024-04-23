@@ -5,9 +5,9 @@ function VisitorLayout() {
   return (
     <>
       <div>
-        <p>burası layout</p>
+        <p>burası visitor layout</p>
         <Outlet/>
-        <p>burası layout</p>
+        <p>burası visitor layout</p>
 
       </div>
     </>
