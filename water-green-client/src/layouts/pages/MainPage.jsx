@@ -6,7 +6,7 @@ function MainPage() {
     <>
       <div>
         
-        <p>Ali, Atlas, Rüzgar, ve Alican abileri.</p>
+        <p>Main Page</p>
 
       </div>
     </>
