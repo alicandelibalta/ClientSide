@@ -1,18 +1,112 @@
-body {
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  // --color-primary: #7380ec;
+  // --color-danger: #009dde;
+  // --color-success: #41f1b6;
+  // --color-warning: #ffbb55;
+  // --color-info-dark: #7d8da1;
+  // --color-info-light: #dce1eb;
+  // --color-light: rgba(242, 242, 248, 0.852);
+
+  --color-text-primary: #184b4c;
+  --color-text-light: #fbfbf9;
+
+  --color-background-lighter: #fefefd;
+  --color-background-light: #fbfbf9;
+  --color-background-primary: #f5f4ef;
+  --color-background-dark: #acaba7;
+  --color-background-darker: #7b7a78;
+
+  --color-dark: ;
+
+  // --card-border-radius: 2rem;
+  // --border-radius-1: 0.4rem;
+  // --border-radius-2: 0.8rem;
+  // --border-radius-3: 1.2rem;
+
+  // --card-padding: 1.8rem;
+  // --padding-1: 1.2rem;
+
+  // --box-shadow: 0 2rem 3rem var(--color-danger);
+}
+
+.dark-theme-variables {
+  --color-text-darktheme-primary: ;
+  --color-background: ;
+  --color-white: ;
+  --color-dark: ;
+  --color-dark-variant: ;
+
+  // --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.colorful-component-background {
+  --color-component-background-primary: #f8f7f4;
+  --color-component-background-blue: #52a2f1;
+  --color-component-background-orange: #ff8941;
+  --color-component-background-yellow: #dbbe29;
+  --color-component-background-purple: #6a1add;
+  --color-component-background-red: #bb1c1c;
+  --color-component-background-gray: #737373;
+  // --card-padding: 1.8rem;
+  // --padding-1: 1.2rem;
+}
+* {
   margin: 0;
   padding: 0;
-}
-
-html {
-  // font-size: 14px;
-}
-
-* {
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "RobotoThin" !important;
+  font-size: 16px;
+  user-select: none;
+  overflow-x: hidden;
 }
 
 @font-face {
+  font-family: "RobotoThin";
+  src: url("../font/roboto/Roboto-Thin.ttf");
 }
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../font/roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../font/roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "RobotoSerif";
+  src: url("../font/roboto-serıf/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf");
+}
+
+h1 {
+  // font-weight: 800;
+  font-size: 24px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+
 // Başlık metin boyutu: 24px ila 36px arasında olabilir.
 // Alt başlık metin boyutu: 18px ila 24px arasında olabilir.
 // Ana metin boyutu:  16px ila 20px arasında olabilir.

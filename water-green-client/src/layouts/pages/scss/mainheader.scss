@@ -1,0 +1,37 @@
+
+
+a {
+  font-size: 24px;
+  font-family: "RobotoMedium";
+  color: var( --color-text-primary);
+}
+
+// .mainheader-section {
+//     height: 100px;
+//     width: auto;
+
+//     align-items: center;
+//     display: flex;
+// }
+
+.header-list {
+    height: 100px;
+    width: auto;
+
+    align-items:baseline;
+    display: flex;
+    margin-right: 100px;
+}
+
+.header-list .header-logo {
+    margin-top : 20px;
+    margin-left: 50px;
+}
+
+.header-list .header-list-item {
+    margin-left: 100px;
+}
+
+.pages-section {
+    margin-left: 200px;
+}

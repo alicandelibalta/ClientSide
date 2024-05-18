@@ -1,16 +1,14 @@
 import React, { lazy, Suspense} from "react";
 import { Routes, Route } from "react-router-dom";
 
-const VisitorGetArticle = lazy(() => import("../roles/visitor/components/VisitorArticle"));
-const VisitorMainPage = lazy(() => import("../roles/visitor/components/VisitorMainPage"));
+const VisitorArticle = lazy(() => import("../roles/visitor/components/VisitorArticle"));
 
 
 function VisitorRoutes() {
   return (
     <Suspense fallback={<div></div>}>
       <Routes>
-        <Route path="/visitor-main-page" element={<VisitorMainPage />} />
-        <Route path="/visitor-article" element={<VisitorGetArticle />} />
+        <Route path="/visitor-article" element={<VisitorArticle />} />
       </Routes>
     </Suspense>
   );
