@@ -2,13 +2,13 @@ import React from "react";
 import { Routes, Route} from "react-router-dom";
 
 import "./assets/scss/app.scss";
-// import AdminLayout from "./layouts/admin-layout/AdminLayout";
+import AdminLayout from "./layouts/admin-layout/AdminLayout";
 import EditorLayout from "./layouts/editor-layout/EditorLayout";
 import WriterLayout from "./layouts/writer-layout/WriterLayout";
 
 import MainPage from "./layouts/pages/MainPage";
 
-// import AdminRoutes from "./routes/AdminRoutes";
+import AdminRoutes from "./routes/AdminRoutes";
 import EditorRoutes from "./routes/EditorRoutes";
 import WriterRoutes from "./routes/WriterRoutes";
 import AccountRoutes from "./routes/AccountRoutes";
@@ -27,6 +27,10 @@ function App() {
 
       <Route path="/editor" element={<EditorLayout />}>
         <Route path="*" element={<EditorRoutes />} />
+      </Route> 
+
+      <Route path="/admin" element={<AdminLayout />}>
+        <Route path="*" element={<AdminRoutes />} />
       </Route> 
 
       <Route path="*" element={<ErrorPage_404/>}/>

@@ -23,6 +23,3 @@
 //   }, []);
 
 //async yoktu ben ekledim sorun olursa çıkarırız.
-async function AdminCreate () {
-
-}
