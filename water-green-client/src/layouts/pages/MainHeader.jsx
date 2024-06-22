@@ -8,8 +8,9 @@ function MainHeader() {
         <div className="header-list">
    
           <a className="header-logo" href="/">
-            <img src={require("./image/headerlogo.png")} alt="WG" />
+            WG
           </a>
+          <a className="header-logo-dot">o</a>
 
           <div className="pages-section">
             <a href="#" className="header-list-item">

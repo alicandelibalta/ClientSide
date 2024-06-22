@@ -1,14 +1,8 @@
 import React, { lazy, Suspense} from "react";
 import { Routes, Route } from "react-router-dom";
 
-const AdminList = lazy(() =>
-  import("../roles/admin/admin/components/AdminList")
-);
-const AdminCreate = lazy(() =>
-  import("../roles/admin/admin/components/AdminCreate")
-);
-const AdminUpdate = lazy(() =>
-  import("../roles/admin/admin/components/AdminUpdate")
+const UpdateUserById = lazy(() =>
+  import("../roles/admin/admin/components/UpdateUserById")
 );
 const CreateArticle = lazy(() =>
   import("../roles/admin/admin/components/CreateArticle")
@@ -19,17 +13,23 @@ const CreateUser = lazy(() =>
 const GetUsers = lazy(() =>
   import("../roles/admin/admin/components/GetUsers")
 );
+const GetUserById = lazy(() =>
+  import("../roles/admin/admin/components/GetUserById")
+);
+const GetArticles = lazy(() =>
+  import("../roles/admin/admin/components/GetArticles")
+);
 
 function AdminRoutes() {
   return (
     <Suspense fallback={<div></div>}>
       <Routes>
-        <Route path="/Adminlist" element={<AdminList />} />
-        <Route path="/Admincreate" element={<AdminCreate />} />
-        <Route path="/Adminupdate/:id" element={<AdminUpdate />} />
+        <Route path="/UpdateUserById/:id" element={<UpdateUserById />} />
         <Route path="/CreateArticle" element={<CreateArticle />} />
         <Route path="/CreateUser" element={<CreateUser />} />
         <Route path="/GetUsers" element={<GetUsers />} />
+        <Route path="/GetArticles" element={<GetArticles />} />
+        <Route path="/GetUserById/:id" element={<GetUserById />} />
       </Routes>
     </Suspense>
   );

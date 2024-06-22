@@ -1,7 +1,7 @@
 // components/layouts/AdminLayout.js
 import React from "react";
 import { Link } from 'react-router-dom';
-import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Icon, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import PeopleIcon from '@mui/icons-material/People';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 
@@ -23,6 +23,12 @@ const AdminSideBar = () => {
               <PersonAddIcon />
             </ListItemIcon>
             <ListItemText primary="Create User" />
+          </ListItem>
+          <ListItem component={Link} to="/admin/CreateArticle">
+            <ListItemIcon>
+              <Icon/>
+            </ListItemIcon>
+            <ListItemText primary="Create Article" />
           </ListItem>
         </List>
       </div>

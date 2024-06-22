@@ -1,0 +1,29 @@
+
+<svg>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-51.875833,-106.66744)">
+    <g
+       id="g1"
+       transform="matrix(1.0015578,0,0,1.0015578,-0.08081042,-0.16616293)">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.18240859,0,0,0.18240859,19.260679,35.360529)"
+         id="text1"
+         style="font-size:100px;font-family:Tahoma;-inkscape-font-specification:Tahoma;white-space:pre;shape-inside:url(#rect1);fill:#008000;stroke-width:1.88976;stroke-linecap:round;stroke-linejoin:round"><tspan
+           x="178.02148"
+           y="462.10998"
+           id="tspan3"><tspan
+             style="font-weight:bold;font-family:'Segoe UI Variable';-inkscape-font-specification:'Segoe UI Variable Bold';fill:#184b4c"
+             id="tspan2">WG </tspan></tspan></text>
+      <circle
+         style="fill:#d60000;fill-opacity:1;stroke-width:0.286028;stroke-linecap:round;stroke-linejoin:round"
+         id="path1"
+         cx="88.442085"
+         cy="115.77054"
+         r="4.0417104" />
+    </g>
+  </g>
+</svg>
