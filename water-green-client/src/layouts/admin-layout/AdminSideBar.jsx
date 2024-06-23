@@ -1,17 +1,30 @@
 // components/layouts/AdminLayout.js
 import React from "react";
-import { Link } from 'react-router-dom';
-import { Icon, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import PeopleIcon from '@mui/icons-material/People';
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import { Link } from "react-router-dom";
+import {
+  Icon,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  SpeedDialIcon,
+} from "@mui/material";
+import PeopleIcon from "@mui/icons-material/People";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
 
-import "./scss/adminSideBar.scss"
+import "./scss/adminSideBar.scss";
 
 const AdminSideBar = () => {
   return (
     <>
       <div className="admin-sidebar-container">
         <List>
+          <ListItem component={Link} to="/admin/adminProfile">
+            <ListItemIcon>
+              <PeopleIcon />
+            </ListItemIcon>
+            <ListItemText primary="Profile" />
+          </ListItem>
           <ListItem component={Link} to="/admin/GetUsers">
             <ListItemIcon>
               <PeopleIcon />
@@ -26,7 +39,7 @@ const AdminSideBar = () => {
           </ListItem>
           <ListItem component={Link} to="/admin/CreateArticle">
             <ListItemIcon>
-              <Icon/>
+              <SpeedDialIcon />
             </ListItemIcon>
             <ListItemText primary="Create Article" />
           </ListItem>

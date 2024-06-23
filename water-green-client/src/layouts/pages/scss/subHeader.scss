@@ -1,0 +1,29 @@
+a {
+  font-size: 24px;
+  font-family: "RobotoMedium";
+  color: var(--color-text-primary);
+}
+
+.subheader-container {
+  height: 150px;
+  width: auto;
+
+  align-items: center;
+  display: flex;
+}
+
+.icon-news-card {
+    display: flex;
+    margin-left: 200px;
+    
+  a{
+    display: flex;
+    align-items: center;
+
+    margin-left: 20px;
+  }
+  img {
+    display: flex;
+    align-items: center;
+  }
+}
