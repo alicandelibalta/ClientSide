@@ -1,5 +1,6 @@
 import React, { lazy, Suspense} from "react";
 import { Routes, Route } from "react-router-dom";
+import ErrorPage_404 from "../layouts/pages/ErrorPage_404";
 
 const UpdateUserById = lazy(() =>
   import("../roles/admin/admin/components/UpdateUserById")
@@ -30,6 +31,7 @@ function AdminRoutes() {
         <Route path="/GetUsers" element={<GetUsers />} />
         <Route path="/GetArticles" element={<GetArticles />} />
         <Route path="/GetUserById/:id" element={<GetUserById />} />
+        <Route path="*" element={<ErrorPage_404/>}/>
       </Routes>
     </Suspense>
   );

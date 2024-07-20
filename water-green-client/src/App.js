@@ -7,6 +7,7 @@ import EditorLayout from "./layouts/editor-layout/EditorLayout";
 import WriterLayout from "./layouts/writer-layout/WriterLayout";
 
 import MainPage from "./layouts/pages/MainPage";
+import ArticlePage from "./layouts/pages/ArticlePage";
 
 import AdminRoutes from "./routes/AdminRoutes";
 import EditorRoutes from "./routes/EditorRoutes";
@@ -15,11 +16,13 @@ import AccountRoutes from "./routes/AccountRoutes";
 
 import ErrorPage_404 from "./layouts/pages/ErrorPage_404";
 
+
 function App() {
   return (
     <Routes>
       <Route path="/account*" element={<AccountRoutes />} />
       <Route path="/" element={<MainPage />} />
+      <Route path="/article" element={<ArticlePage />} />
 
       <Route path="/writer" element={<WriterLayout />}>
         <Route path="*" element={<WriterRoutes />} />

@@ -1,6 +1,6 @@
 import React from "react";
 
-function WriterArticle() {
+function GetWriterArticle() {
   return (
     <>
       <div>writers article</div>
@@ -8,4 +8,4 @@ function WriterArticle() {
   );
 }
 
-export default WriterArticle;
+export default GetWriterArticle;
