@@ -1,17 +1,17 @@
-a {
-  font-size: 24px;
-  font-family: "RobotoMedium";
-  color: var(--color-text-primary);
-}
-h4{
-    color: var(--color-text-primary);
-}
 
 .big-photo-article-card-container {
   height: auto;
   width: 900px;
 
   display: flex;
+  a {
+    font-size: 24px;
+    font-family: "RobotoMedium";
+    color: var(--color-text-primary);
+  }
+  h4{
+      color: var(--color-text-primary);
+  }
 }
 
 .big-photo {

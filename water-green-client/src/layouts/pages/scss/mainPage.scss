@@ -1,12 +1,20 @@
+.mainpage-container {
+    display: flex;
+}
+
 .mainpage-sidebar {
     width: 400px;
     height: auto;
 
     display: flex;
+    flex-direction: column;
 }
 
 .mainpage-maincontent {
+    width: 900px;
 
     display: flex;
+    flex-direction: column;
+
 
 }

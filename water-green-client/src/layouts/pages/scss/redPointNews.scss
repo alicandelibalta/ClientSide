@@ -1,0 +1,21 @@
+
+.red-point-news-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  justify-content: space-around;
+
+  width: 900px;
+  height: 100px;
+  a {
+    font-size: 24px;
+    font-family: "RobotoMedium";
+    color: var( --color-warning);
+  }
+}
+
+hr {
+  background-color: black;
+  height: 1px;
+  width: 800px;
+}

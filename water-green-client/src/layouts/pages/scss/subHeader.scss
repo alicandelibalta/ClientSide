@@ -1,8 +1,4 @@
-a {
-  font-size: 24px;
-  font-family: "RobotoMedium";
-  color: var(--color-text-primary);
-}
+
 
 .subheader-container {
   height: 150px;
@@ -10,6 +6,12 @@ a {
 
   align-items: center;
   display: flex;
+  
+  a {
+    font-size: 24px;
+    font-family: "RobotoMedium";
+    color: var(--color-text-primary);
+  }
 }
 
 .icon-news-card {

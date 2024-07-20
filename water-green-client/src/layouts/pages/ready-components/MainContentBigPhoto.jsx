@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/mainContents.scss";
+import "../scss/mainContentBigPhoto.scss";
 
 function MainContentBigPhoto () {
 
