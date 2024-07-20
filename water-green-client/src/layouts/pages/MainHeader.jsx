@@ -1,12 +1,14 @@
 import React from "react";
 import "./scss/mainheader.scss";
 
+
 function MainHeader() {
   return (
     <>
       <nav className="mainheader-section">
         <div className="header-list">
-            
+
+        
           <a className="header-logo" href="/">
             WG
           </a>
