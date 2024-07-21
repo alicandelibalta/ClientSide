@@ -4,6 +4,7 @@ import ErrorPage_404 from "../layouts/pages/ErrorPage_404";
 
 const ListWriterArticle = lazy(() => import("../roles/writer/components/ListWriterArticle"));
 const GetWriterInfo = lazy(() => import("../roles/writer/components/GetWriterInfo"));
+const CreateArticle = lazy(() => import("../roles/writer/components/CreateArticle"));
 
 
 function WriterRoutes() {
@@ -12,6 +13,7 @@ function WriterRoutes() {
       <Routes>
         <Route path="/writer-article" element={<ListWriterArticle/>} />
         <Route path="/writer-info" element={<GetWriterInfo/>} />
+        <Route path="/create-article" element={<CreateArticle/>} />
 
         <Route path="*" element={<ErrorPage_404/>}/>
       </Routes>

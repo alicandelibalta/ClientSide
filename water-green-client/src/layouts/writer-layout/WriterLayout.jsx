@@ -14,6 +14,8 @@ function WriterLayout() {
           <ol className="writer-layout-sidebar-list">
             <Button className="writer-sidebar-list-button" href="/writer/writer-article">My Articles</Button>
             <Button className="writer-sidebar-list-button" href="/writer/writer-info">My Info</Button>
+            <Button className="writer-sidebar-list-button" href="/writer/create-article">Create Article</Button>
+
           </ol>
         </div>
         <div className="writer-layout-content">

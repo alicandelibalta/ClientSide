@@ -36,8 +36,10 @@ function CreateArticle() {
   const formats = [
     'font', 'size',
     'bold', 'italic', 'underline', 'strike', 'blockquote',
-    'list', 'bullet', 'indent',
-    'link', 'image'
+    'list', 'ordered', 'bullet', 'indent',
+    'link', 'image',
+    'color', 'background',
+    'clean',
   ];
 
   return (
