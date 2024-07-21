@@ -1,14 +1,24 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import "./scss/writerLayout.scss";
+import { Button } from "@mui/material";
+import MainHeader from "../pages/MainHeader";
 
 function WriterLayout() {
   return (
     <>
-      <div>
-        <p>burası writer layout</p>
-        <Outlet/>
-        <p>burası writer layout</p>
-
+      <MainHeader/>
+      <div className="writer-layout-container">
+        <div className="writer-layout-sidebar">
+          <img src={require("./img/woman.jpg")} alt="" />
+          <ol className="writer-layout-sidebar-list">
+            <Button className="writer-sidebar-list-button" href="/writer/writer-article">My Articles</Button>
+            <Button className="writer-sidebar-list-button" href="/writer/writer-info">My Info</Button>
+          </ol>
+        </div>
+        <div className="writer-layout-content">
+          <Outlet />
+        </div>
       </div>
     </>
   );

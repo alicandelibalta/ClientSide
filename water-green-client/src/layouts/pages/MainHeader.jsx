@@ -8,7 +8,6 @@ function MainHeader() {
       <nav className="mainheader-section">
         <div className="header-list">
 
-        
           <a className="header-logo" href="/">
             WG
           </a>
