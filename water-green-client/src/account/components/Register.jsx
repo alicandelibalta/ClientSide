@@ -1,7 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { registerUser } from "../api/accountApi";  // API fonksiyonunu import et
 
 import "../scss/register.scss";
 
@@ -11,7 +11,7 @@ function Register() {
       <div className="register-container">
         <div className="register-frame">
           <div className="register-picture">
-            <img //Buraya her zaman 800x500 fotoğraf atmalısın.
+            <img 
               src={require("../img/man-walking-top-dune-desert.png")}
               alt=""
             />
@@ -20,31 +20,22 @@ function Register() {
             initialValues={{
               email: "",
               password: "",
-              name: "",
-              surname: "",
-              country: "",
-              city: "",
-              birthday: "",
-              gender: "",
+              passwordConfirm: "",
+              firstName: "",
+              lastName: ""
             }}
             validationSchema={Yup.object({
               email: Yup.string()
                 .email("Invalid email address")
                 .required("Please enter your email address"),
-              name: Yup.string().required("Please enter your name"),
-              surname: Yup.string().required("Please enter your surname"),
-              country: Yup.string().required("Please enter your country"),
-              city: Yup.string().required("Please enter your city"),
-              birthday: Yup.date().required("Please enter your birthday"),
-              gender: Yup.string().required("Please enter your gender"),
-
+              firstName: Yup.string().required("Please enter your name"),
+              lastName: Yup.string().required("Please enter your surname"),
+              password: Yup.string().required("Please enter your password"),
+              passwordConfirm: Yup.string()
+                .oneOf([Yup.ref('password'), null], 'Passwords must match')
+                .required('Please confirm your password')
             })}
-            onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                setSubmitting(false);
-              }, 400);
-            }}
+            onSubmit={registerUser}  // API fonksiyonunu kullan
           >
             <Form className="register-form">
               <div className="register-context-area">
@@ -53,17 +44,17 @@ function Register() {
                     <ErrorMessage name="name" />
                   </span>
                   <Field
-                    name="name"
-                    type="name"
+                    name="firstName"
+                    type="text"
                     className="login-input"
                     placeholder="name"
                   />
 
                   <span className="register-errormessage">
-                    <ErrorMessage name="surname"/>
+                    <ErrorMessage name="surname" />
                   </span>
                   <Field
-                    name="surname"
+                    name="lastName"
                     type="text"
                     className="login-input"
                     placeholder="surname"
@@ -80,51 +71,28 @@ function Register() {
                   />
 
                   <span className="register-errormessage">
-                    <ErrorMessage name="country" />
+                    <ErrorMessage name="password" />
                   </span>
                   <Field
-                    name="country"
-                    type="text"
+                    name="password"
+                    type="password"
                     className="login-input"
-                    placeholder="country"
+                    placeholder="password"
                   />
 
                   <span className="register-errormessage">
-                    <ErrorMessage name="city" />
+                    <ErrorMessage name="passwordConfirm" />
                   </span>
                   <Field
-                    name="city"
-                    type="text"
+                    name="passwordConfirm"
+                    type="password"
                     className="login-input"
-                    placeholder="city"
+                    placeholder="confirm password"
                   />
 
-                  <span className="register-errormessage">
-                    <ErrorMessage name="birthday" />
-                  </span>
-                  <Field
-                    name="birthday"
-                    type="date"
-                    className="login-input"
-                    placeholder="birthday"
-                  />
-
-                  <span className="register-errormessage">
-                    <ErrorMessage name="gender" />
-                  </span>
-                  <Field
-                    name="gender"
-                    as="select"
-                    className="login-input"
-                    placeholder="gender"
-                  >
-                    <option value=""></option>
-                    <option value="men">men</option>
-                    <option value="women">women</option>
-                    <option value="none">who ask?</option>
-                  </Field>
-
-                  <button className="register-button"> Register </button>
+                  <button className="register-button" type="submit">
+                    Register
+                  </button>
                 </div>
               </div>
             </Form>

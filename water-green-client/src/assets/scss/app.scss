@@ -10,7 +10,7 @@
   // --color-info-light: #dce1eb;
   // --color-light: rgba(242, 242, 248, 0.852);
 
-  --color-text-primary: #184b4c;
+  --color-text-primary: #000000;
   --color-text-light: #fbfbf9;
 
   --color-background-lighter: #fefefd;
@@ -61,17 +61,24 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "RobotoThin" !important;
-  font-size: 16px;
+  font-family: "RobotoSerif" !important;
+  word-spacing: 0.1em; 
+  line-height: 1.2; 
+  font-size: 18px;
   user-select: none;
   overflow-x: hidden;
 }
+
+// article {
+//   color: var(--color-text-primary);
+//   overflow-x: hidden;
+// }
 
 @font-face {
   font-family: "RobotoThin";
@@ -91,14 +98,13 @@ body {
 }
 
 h1 {
-  // font-weight: 800;
-  font-size: 24px;
+  font-size: 26px;
 }
 h2 {
-  font-size: 22px;
+  font-size: 24px;
 }
 h3 {
-  font-size: 20px;
+  font-size: 22px;
 }
 h4 {
   font-size: 18px;

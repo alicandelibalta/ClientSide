@@ -1,6 +1,6 @@
 import React, { lazy, Suspense} from "react";
 import { Routes, Route } from "react-router-dom";
-import ErrorPage_404 from "../layouts/pages/ErrorPage_404";
+import ErrorPage404 from "../layouts/pages/ErrorPage404";
 
 const ListWriterArticle = lazy(() => import("../roles/writer/components/ListWriterArticle"));
 const GetWriterInfo = lazy(() => import("../roles/writer/components/GetWriterInfo"));
@@ -15,7 +15,7 @@ function WriterRoutes() {
         <Route path="/writer-info" element={<GetWriterInfo/>} />
         <Route path="/create-article" element={<CreateArticle/>} />
 
-        <Route path="*" element={<ErrorPage_404/>}/>
+        <Route path="*" element={<ErrorPage404/>}/>
       </Routes>
     </Suspense>
   );

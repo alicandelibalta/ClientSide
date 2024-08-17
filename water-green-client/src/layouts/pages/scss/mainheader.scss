@@ -12,6 +12,8 @@
         font-family: "RobotoMedium";
         color: var( --color-text-primary);
       }
+
+
 }
 
 .header-list .header-logo {
@@ -28,9 +30,22 @@
 }
 
 .header-list .header-list-item {
+    display: flex;
+
     margin-left: 100px;
 }
 
 .pages-section {
+    display: flex;
+
     margin-left: 200px;
+}
+
+.mainheader-login-button {
+    width: 110px;
+    height: 50px;
+    margin-left: 100px;
+    
+    border-radius: 10%;
+    cursor:pointer;
 }

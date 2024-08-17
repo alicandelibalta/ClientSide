@@ -1,6 +1,6 @@
 import React, { lazy, Suspense} from "react";
 import { Routes, Route } from "react-router-dom";
-import ErrorPage_404 from "../layouts/pages/ErrorPage_404";
+import ErrorPage404 from "../layouts/pages/ErrorPage404";
 
 // import Login from "../account/components/Login";
 // import LoginWithEmail from "../account/components/LoginWithEmail";
@@ -19,7 +19,7 @@ function AccountRoutes() {
         <Route path="/login" element={<Login />} />
         <Route path="/login-with-email" element={<LoginWithEmail />} />
         <Route path="/register" element={<Register />} />
-        <Route path="*" element={<ErrorPage_404/>}/>
+        <Route path="*" element={<ErrorPage404/>}/>
       </Routes>
     </Suspense>
   );

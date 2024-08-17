@@ -4,7 +4,7 @@ import "../scss/mainContentBigPhoto.scss";
 function MainContentBigPhoto () {
 
 
-    
+
     const newsTitle = "My First Article is Going to be Published"
     const newsAltText = "This is my first article and ı am so proud of it. I dont know maybe others can proud of me"
 

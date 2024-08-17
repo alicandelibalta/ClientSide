@@ -1,0 +1,34 @@
+.article-page-container {
+  display: flex;
+  height: 100vh;   
+
+  width: 600px;
+
+}
+
+.article-page-title {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.article-page-content {
+    display: flex;
+    margin-top: 100px ;
+}
+.article-page-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .article-page-container article h1 {
+        font-size: 34px;
+        word-spacing: 0.15em; 
+        line-height: 1.2; 
+    }
+    .article-page-container article p {
+        word-spacing: 0.15em; 
+        line-height: 1.5; 
+    }
+}
+

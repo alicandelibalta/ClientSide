@@ -8,13 +8,16 @@ import WriterLayout from "./layouts/writer-layout/WriterLayout";
 
 import MainPage from "./layouts/pages/MainPage";
 import ArticlePage from "./layouts/pages/ArticlePage";
+import HeaderPages from "./layouts/pages/HeaderPages";
 
 import AdminRoutes from "./routes/AdminRoutes";
 import EditorRoutes from "./routes/EditorRoutes";
 import WriterRoutes from "./routes/WriterRoutes";
 import AccountRoutes from "./routes/AccountRoutes";
 
-import ErrorPage_404 from "./layouts/pages/ErrorPage_404";
+
+import ErrorPage404 from "./layouts/pages/ErrorPage404";
+
 
 
 function App() {
@@ -23,6 +26,11 @@ function App() {
       <Route path="/account*" element={<AccountRoutes />} />
       <Route path="/" element={<MainPage />} />
       <Route path="/article" element={<ArticlePage />} />
+
+      <Route path="/header-pages" element={<HeaderPages />} />
+
+
+
 
       <Route path="/writer" element={<WriterLayout />}>
         <Route path="*" element={<WriterRoutes />} />
@@ -36,9 +44,8 @@ function App() {
         <Route path="*" element={<AdminRoutes />} />
       </Route> 
 
-      <Route path="*" element={<ErrorPage_404/>}/>
+      <Route path="*" element={<ErrorPage404/>}/>
    
-
     </Routes>
   );
 }
