@@ -19,7 +19,6 @@ function CreateArticle() {
     console.log("Image:", image);
   };
 
-  // Quill modüllerini ve formatlarını tanımlayın
   const modules = {
     toolbar: [
       [{ 'font': [] }],

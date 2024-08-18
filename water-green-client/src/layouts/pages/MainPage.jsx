@@ -11,7 +11,7 @@ import SideBarBox from "./ready-components/SideBarBox";
 
 //Burası Main page olacak.
 //Burada her role göre farklı yerleri render edicez
-//
+
 
 function MainPage() {
   return (

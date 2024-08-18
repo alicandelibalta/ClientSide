@@ -87,28 +87,4 @@ function LoginWithEmail() {
 
 export default LoginWithEmail;
 
-// const [email, setEmail] = useState("");
-// const [password, setPassword] = useState("");
-// const [showPassword, setShowPassword] = useState(false);
 
-// const directToForgotPassword = () => {
-//   const forgotPasswordURL = "../ForgotPassword";
-
-//   window.location.href = forgotPasswordURL;
-//   return (
-//     <>
-//       <ForgotPassword />
-//     </>
-//   );
-// };
-
-// const PasswordVisibility = () => {
-//   setShowPassword(!showPassword);
-// };
-
-// const navigate = useNavigate();
-
-// const handleClick = () => {
-//   // e.preventdefault();
-//   navigate("/LoginWithEmail");
-// };

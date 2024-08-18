@@ -17,7 +17,7 @@ function CreateUser() {
   //   e.preventDefault();
   //   const userData = { username, email, password };
   //   console.log("User Data:", userData);
-  //   // Burada API çağrısını yapabilirsiniz.
+  //  
   // };
 
   const role = ["writer", "admin", "editor", "user"];

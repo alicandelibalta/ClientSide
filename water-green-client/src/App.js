@@ -30,8 +30,6 @@ function App() {
       <Route path="/header-pages" element={<HeaderPages />} />
 
 
-
-
       <Route path="/writer" element={<WriterLayout />}>
         <Route path="*" element={<WriterRoutes />} />
       </Route> 

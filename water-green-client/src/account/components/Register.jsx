@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { registerUser } from "../api/accountApi";  // API fonksiyonunu import et
+import { registerUser } from "../api/accountApi"; 
 
 import "../scss/register.scss";
 
@@ -35,13 +35,13 @@ function Register() {
                 .oneOf([Yup.ref('password'), null], 'Passwords must match')
                 .required('Please confirm your password')
             })}
-            onSubmit={registerUser}  // API fonksiyonunu kullan
+            onSubmit={registerUser}  
           >
             <Form className="register-form">
               <div className="register-context-area">
                 <div className="register-area">
                   <span className="register-errormessage">
-                    <ErrorMessage name="name" />
+                    <ErrorMessage name="firstName" />
                   </span>
                   <Field
                     name="firstName"
@@ -51,7 +51,7 @@ function Register() {
                   />
 
                   <span className="register-errormessage">
-                    <ErrorMessage name="surname" />
+                    <ErrorMessage name="lastName" />
                   </span>
                   <Field
                     name="lastName"

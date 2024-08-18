@@ -7,7 +7,7 @@ function HeaderPages() {
   const [pageTitle, setPageTitle] = useState("");
 
   const handleTitleChange = (title) => {
-    setPageTitle(title); // Tıklanan başlığı state'e kaydet
+    setPageTitle(title); 
   };
 
   

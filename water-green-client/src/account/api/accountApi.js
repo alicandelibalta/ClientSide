@@ -1,5 +1,4 @@
 // Login logout işlemleri buradan yapılacak. 
-// src/api/registerUser.js
 
 export const registerUser = async (values, { setSubmitting }) => {
     try {
