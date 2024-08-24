@@ -21,7 +21,34 @@ export const registerUser = async (values, { setSubmitting }) => {
     } finally {
       setSubmitting(false);
     }
-  };
-  
+};
+
+
+export const loginUser = async (email, password) => {
+    const response = await fetch(`http://localhost:4000/api/user/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+    });
+
+    if (!response.ok) {
+        throw new Error('Login failed');
+    }
+
+    return response.json();
+};
+
+export const getUserProfile = async (token) => {
+    const response = await fetch(`http://localhost:4000/api/user/profile`, {
+        headers: { 'Authorization': `Bearer ${token}` }
+    });
+
+    if (!response.ok) {
+        throw new Error('Failed to fetch profile');
+    }
+
+    return response.json();
+};
+
 
 
